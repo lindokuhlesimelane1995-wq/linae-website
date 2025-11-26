@@ -385,3 +385,53 @@ footer {
   .contact-card h3 { font-size: 1.2rem; }
   .contact-card p { font-size: 0.9rem; }
 }
+/* --------------------- RESPONSIVE --------------------- */
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero-inner {
+    padding: 20px;
+  }
+  .hero-inner h1 {
+    font-size: 1.8rem;
+  }
+  .hero-inner p {
+    font-size: 1rem;
+  }
+  .hero-actions .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .service-card {
+    padding: 20px;
+  }
+  nav .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 2.5rem;
+  }
+  .hero-inner p {
+    font-size: 1.1rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
